@@ -134,7 +134,7 @@ body {
   border: 2px solid var(--mist)
 }
 
-/* 1 hero: sticky text on the left, a stack of photo cards on the right */
+
 .thh {
   overflow: clip;
   display: grid;

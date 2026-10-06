@@ -1,4 +1,4 @@
-/* ===== Section padding: Contact page. Each section has its own padding; edit them here. ===== */
+
 .ch {
     padding: 8rem var(--pad) 9rem
 }
@@ -117,7 +117,7 @@
     }
 }
 
-/* Contact page: relies on tokens, header, buttons, .faq and footer from style.css */
+
 body {
     overflow-wrap: break-word
 }
@@ -1101,7 +1101,7 @@ body {
 .v-map iframe {
     display: block;
     width: 100%;
-    height: min(65svh, 560px);
+    /* height: min(65svh, 560px); */
     min-height: 400px;
     border: 0;
     border-radius: 2rem;
@@ -1691,12 +1691,7 @@ body {
     }
 }
 
-/* ============================================================
-   RESPONSIVE + HERO FIXES (loads last so it wins over the rules above)
-   ============================================================ */
 
-/* Hero, desktop: the photo column now stretches to the full height of the text column,
-   so there is no empty gap above and below the image */
 .ch { align-items: stretch }
 .ch-text { align-self: center }
 .ch-media { align-self: stretch; display: flex; flex-direction: column }
@@ -1746,8 +1741,7 @@ body {
 }
 
 /* ============================================================
-   TABLET PORTRAIT (iPad etc.): stack the hero instead of stretching
-   the photo to a full-height column
+   TABLET PORTRAIT 
    ============================================================ */
 .ch-arch { max-height: 52rem }
 
@@ -1772,8 +1766,7 @@ body {
     .ch-stat--btm { bottom: 1rem; top: auto; left: 1rem; right: auto }
 }
 
-/* Urgent card: the decorative ring stays behind the content. The action cards are solid,
-   so the ring never shows through them or crosses the text */
+
 .urg-copy,
 .urg-actions { position: relative; z-index: 1 }
 

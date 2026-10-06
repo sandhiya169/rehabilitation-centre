@@ -1,4 +1,4 @@
-/* Dashboards. Loads after style.css and reuses its tokens, fonts and buttons */
+
 body.dash {
   background: var(--mist)
 }

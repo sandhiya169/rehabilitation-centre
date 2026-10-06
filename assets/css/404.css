@@ -1,5 +1,4 @@
-/* 404 page. Loads after style.css and reuses its tokens, fonts and buttons.
-   One fluid size scale (clamp), so no breakpoints are needed. */
+/* 404 page */
 
 .nf-hero {
   min-height: 100svh;

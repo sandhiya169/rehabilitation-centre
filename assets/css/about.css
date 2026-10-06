@@ -1,4 +1,4 @@
-/* ===== Section padding: About page. Each section has its own padding; edit them here. ===== */
+
 .ah {
   padding: 8rem var(--pad) 5rem
 }
@@ -117,8 +117,7 @@
   }
 }
 
-/* About page: relies on tokens, header, buttons and footer from style.css */
-/* Fit the window: nothing may push the page wider than the screen (AOS slide-ins, wide children) */
+
 html,
 body {
   max-width: 100%;
