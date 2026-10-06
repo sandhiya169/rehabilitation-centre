@@ -43,14 +43,16 @@
     b.setAttribute('aria-label', show ? 'Hide password' : 'Show password');
   }));
 
-  // Login: User goes to the patient dashboard, Admin to the therapist dashboard
+  document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  }));
+
   const lf = $('#loginForm');
   if (lf) {
     let role = 'user';
     const copy = { user: ['Welcome back', 'Sign in to your patient account.'], admin: ['Admin sign in', 'Sign in to the therapist and admin dashboard.'] };
     document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
       role = b.dataset.role;
-      document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === b));
       $('#title').textContent = copy[role][0];
       $('#lead').textContent = copy[role][1];
     }));

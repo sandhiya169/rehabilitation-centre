@@ -29,6 +29,10 @@
       <div class="au-card">
         <h1>Create your account</h1>
         <p class="au-lead">It takes less than a minute. Every detail stays confidential.</p>
+         <div class="seg" role="group" aria-label="Login as">
+        <button type="button" data-role="user" aria-pressed="true">Patient</button>
+        <button type="button" data-role="admin" aria-pressed="false">Therapist</button>
+      </div>
         <div class="ok" id="ok" role="status">Account created. Taking you to the login page.</div>
         <form id="signupForm" novalidate style="margin-top:1.5rem">
           <div class="fld"><label for="name">Full name</label><input id="name" name="name" type="text"
@@ -37,11 +41,7 @@
           <div class="fld"><label for="email">Email address</label><input id="email" name="email" type="email"
               autocomplete="email" placeholder="name@example.com" data-rule="email"><span class="err"
               role="alert"></span></div>
-          <div class="fld"><label for="role">I am a</label><select id="role" name="role" data-rule="role">
-              <option value="">Select one</option>
-              <option value="patient">Patient</option>
-              <option value="therapist">Therapist</option>
-            </select><span class="err" role="alert"></span></div>
+
           <div class="fld"><label for="pw">Password</label>
             <div class="pw"><input id="pw" name="password" type="password" autocomplete="new-password"
                 placeholder="Letters and numbers, 8+ characters" data-rule="newPw"><button type="button" class="pw-t"
