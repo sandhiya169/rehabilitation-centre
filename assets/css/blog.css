@@ -1119,7 +1119,8 @@ body {
 @media(max-width:900px) {
     .bh {
         grid-template-columns: 1fr;
-        min-height: auto
+        min-height: auto;
+        text-align: center;
     }
 
     .bh-media {
