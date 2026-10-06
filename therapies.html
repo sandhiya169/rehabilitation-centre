@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Therapies | Stackly Rehabilitation Center</title>
+  <meta name="description"
+    content="Physical therapy, addiction recovery, mind and mood care and active reconditioning, delivered by one coordinated team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Hanken+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/therapies.css">
+</head>
+
+<body>
+  <div class="pl" id="pl" role="status" aria-label="Loading">
+    <img class="pl-logo" src="assets/images/stackly-white.webp" alt="Stackly" aria-hidden="true">
+    <span class="pl-bar" aria-hidden="true"><i></i></span>
+  </div>
+  <script src="assets/js/preloader.js"></script>
+
+  <header class="nav">
+    <a href="index.html" class="logo" aria-label="Stackly home"><img src="assets/images/stackly-white.webp" alt="Stackly" width="343" height="100"></a>
+    <nav id="menu" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="therapies.html" aria-current="page">Therapies</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="nav-book"><i class="fa-regular fa-user" aria-hidden="true"></i> Login</a>
+    </nav>
+    <div class="nav-right">
+      <a href="login.html" class="nav-login"><i class="fa-regular fa-user" aria-hidden="true"></i> Login</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"
+        aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- 1 HERO -->
+  <section class="thh" id="top">
+    <div class="thh-top">
+      <p class="thh-tag" data-aos="fade-down">Our therapies</p>
+      <h1><span class="line"><span>Care that meets</span></span><span class="line"><span>you where</span></span><span
+          class="line"><span>you are.</span></span></h1>
+      <div class="thh-side">
+        <p data-aos="fade-up" data-aos-delay="300">Four therapies, one coordinated team. Your plan is built around your goals and adjusted every week.</p>
+        <div class="thh-cta" data-aos="fade-up" data-aos-delay="450"><a href="#finder" class="btn">Find your therapy <i
+              class="fa-solid fa-arrow-right"></i></a><a href="contact.html" class="btn btn-ghost">Talk to us <i
+              class="fa-solid fa-arrow-right"></i></a></div>
+        <ul data-aos="fade-up" data-aos-delay="600" class="thh-chips" aria-label="Jump to a therapy">
+          <li><a href="#therapies">Physical therapy</a></li>
+          <li><a href="#therapies">Addiction recovery</a></li>
+          <li><a href="#therapies">Mind and mood</a></li>
+          <li><a href="#therapies">Active reconditioning</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="th-bars" aria-hidden="true">
+      <figure class="bar"><img
+          src="assets/images/blog.webp" alt=""
+          fetchpriority="high">
+        <figcaption><b>01</b> Physical therapy</figcaption>
+      </figure>
+      <figure class="bar"><img
+          src="assets/images/dignity.webp" alt="">
+        <figcaption><b>02</b> Addiction recovery</figcaption>
+      </figure>
+      <figure class="bar"><img
+          src="assets/images/craving.webp" alt="">
+        <figcaption><b>03</b> Mind and mood</figcaption>
+      </figure>
+      <figure class="bar"><img
+          src="assets/images/therapy.webp" alt="">
+        <figcaption><b>04</b> Active reconditioning</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2 FINDER -->
+  <section class="th-find" id="finder">
+    <div class="find-q">
+      <p class="find-tag" data-aos="fade-up">Therapy finder</p>
+      <h2 data-aos="fade-up">Not sure where to start?</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Choose what feels closest. We will point you to a good first step.</p>
+      <div data-aos="fade-up" data-aos-delay="150" class="find-opts" role="group" aria-label="What brings you here">
+        <button class="opt" aria-pressed="true" data-name="Physical therapy"
+          data-text="Rebuild strength, mobility and confidence after injury or surgery, with a plan that eases pain and respects your pace."
+          data-inc="One-to-one physiotherapy|Hydrotherapy sessions|A personal pain management plan"
+          data-icon="fa-person-walking" data-len="4 to 12 weeks"><span class="opt-n">01</span><span class="opt-t">I am
+            recovering from an injury or surgery</span><i class="fa-solid fa-arrow-right opt-a"
+            aria-hidden="true"></i></button>
+        <button class="opt" aria-pressed="false" data-name="Addiction recovery"
+          data-text="Safe, medically supervised detox followed by structured support that continues long after you leave."
+          data-inc="Medically supervised detox|Counselling and group work|A written relapse prevention plan"
+          data-icon="fa-seedling" data-len="30 to 90 days, then aftercare"><span class="opt-n">02</span><span
+            class="opt-t">I am struggling with alcohol, drugs or cravings</span><i class="fa-solid fa-arrow-right opt-a"
+            aria-hidden="true"></i></button>
+        <button class="opt" aria-pressed="false" data-name="Mind and mood"
+          data-text="Talk therapy and mindfulness for anxiety, low mood, trauma and burnout, with psychiatric support when it is needed."
+          data-inc="Individual therapy|Mindfulness and meditation|Sleep and stress support" data-icon="fa-spa"
+          data-len="6 to 12 weeks"><span class="opt-n">03</span><span class="opt-t">I feel anxious, low or burnt
+            out</span><i class="fa-solid fa-arrow-right opt-a" aria-hidden="true"></i></button>
+        <button class="opt" aria-pressed="false" data-name="Active reconditioning"
+          data-text="Guided fitness and functional training that rebuild strength, routine and trust in your body."
+          data-inc="Guided strength training|Functional movement|Goal setting with your team" data-icon="fa-dumbbell"
+          data-len="8 weeks, ongoing if you wish"><span class="opt-n">04</span><span class="opt-t">I want to rebuild
+            strength and routine</span><i class="fa-solid fa-arrow-right opt-a" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="250" class="find-out" aria-live="polite">
+      <div class="res-card">
+        <div class="res-top"><span class="res-ico"><i id="resIcon" class="fa-solid fa-person-walking"
+              aria-hidden="true"></i></span><span class="res-tag">Suggested first step</span></div>
+        <p class="res-name" id="resName">Physical therapy</p>
+        <p id="resText">Rebuild strength, mobility and confidence after injury or surgery, with a plan that eases pain
+          and respects your pace.</p>
+        <p class="res-len"><i class="fa-regular fa-clock" aria-hidden="true"></i> Typical length: <b id="resLen">4 to 12
+            weeks</b></p>
+        <p class="res-inc-h">What is included</p>
+        <ul class="res-inc" id="resInc">
+          <li>One-to-one physiotherapy</li>
+          <li>Hydrotherapy sessions</li>
+          <li>A personal pain management plan</li>
+        </ul>
+        <div class="res-cta"><a href="contact.html" class="btn">Talk to an advisor <i class="fa-solid fa-arrow-right"
+              aria-hidden="true"></i></a><a href="#therapies" class="btn btn-light">See all therapies <i
+              class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 THERAPIES (pinned sideways scroll on desktop) -->
+  <section class="th-h" id="therapies">
+    <div class="h-track">
+      <div class="h-head">
+        <p class="section-tag" data-aos="fade-up">Our therapies</p>
+        <h2 data-aos="fade-up">Four therapies, one team</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Each therapy stands alone or works with the others. Scroll to explore.</p>
+      </div>
+      <article class="h-panel">
+        <div class="h-img"><img
+            src="assets/images/psyical-therapy.webp"
+            alt="Physiotherapist guiding a patient"></div>
+        <div class="h-body">
+          <h3>Physical therapy</h3>
+          <p>Strength, mobility and pain management after injury or surgery, with hands-on sessions and hydrotherapy.
+          </p>
+          <dl class="facts">
+            <div>
+              <dt>Good for</dt>
+              <dd>Post-surgery recovery, sports injury, chronic pain</dd>
+            </div>
+            <div>
+              <dt>Typical length</dt>
+              <dd>4 to 12 weeks</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+      <article class="h-panel">
+        <div class="h-img"><img
+            src="assets/images/recovery.webp"
+            alt="Doctor consulting with a patient"></div>
+        <div class="h-body">
+          <h3>Addiction recovery</h3>
+          <p>Medically supervised detox followed by counselling, group work and a plan for life after treatment.</p>
+          <dl class="facts">
+            <div>
+              <dt>Good for</dt>
+              <dd>Alcohol, drug and medication dependence</dd>
+            </div>
+            <div>
+              <dt>Typical length</dt>
+              <dd>30 to 90 days, then aftercare</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+      <article class="h-panel">
+        <div class="h-img"><img
+            src="assets/images/healings.webp"
+            alt="Person meditating at sunrise"></div>
+        <div class="h-body">
+          <h3>Mind and mood</h3>
+          <p>Therapy, mindfulness and meditation for anxiety, trauma and burnout, led by psychiatrists and counsellors.
+          </p>
+          <dl class="facts">
+            <div>
+              <dt>Good for</dt>
+              <dd>Anxiety, low mood, trauma, burnout</dd>
+            </div>
+            <div>
+              <dt>Typical length</dt>
+              <dd>6 to 12 weeks</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+      <article class="h-panel">
+        <div class="h-img"><img
+            src="assets/images/strength.webp"
+            alt="Guided strength training session"></div>
+        <div class="h-body">
+          <h3>Active reconditioning</h3>
+          <p>Group fitness and functional training that rebuild confidence in your body and a routine you can keep.</p>
+          <dl class="facts">
+            <div>
+              <dt>Good for</dt>
+              <dd>Low strength, fatigue, returning to daily life</dd>
+            </div>
+            <div>
+              <dt>Typical length</dt>
+              <dd>8 weeks, ongoing if you wish</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4 TYPICAL DAY -->
+  <section class="th-day" id="day">
+    <div class="day-side">
+      <p class="section-tag" data-aos="fade-up">Daily rhythm</p>
+      <h2 data-aos="fade-up">A typical day</h2>
+      <p data-aos="fade-up" data-aos-delay="100">A gentle rhythm of therapy, rest and company. Scroll to follow the day.
+      </p>
+      <p class="day-clock" id="clock" aria-hidden="true">7:00 am</p>
+    </div>
+    <ol class="day-list">
+      <li data-t="7:00 am"><time>7:00 am</time>
+        <div>
+          <h3>Morning movement</h3>
+          <p>Gentle stretching or a walk through the gardens to wake the body.</p>
+        </div>
+      </li>
+      <li data-t="9:00 am"><time>9:00 am</time>
+        <div>
+          <h3>Therapy session</h3>
+          <p>One-to-one time with your therapist, tailored to your plan.</p>
+        </div>
+      </li>
+      <li data-t="12:30 pm"><time>12:30 pm</time>
+        <div>
+          <h3>Shared meal</h3>
+          <p>Nutritious food eaten together, planned with a dietitian.</p>
+        </div>
+      </li>
+      <li data-t="3:00 pm"><time>3:00 pm</time>
+        <div>
+          <h3>Group and skills work</h3>
+          <p>Small groups, practical skills and time with peers who understand.</p>
+        </div>
+      </li>
+      <li data-t="6:00 pm"><time>6:00 pm</time>
+        <div>
+          <h3>Free time and family calls</h3>
+          <p>Rest, read, walk or call home. This part of the day is yours.</p>
+        </div>
+      </li>
+      <li data-t="9:00 pm"><time>9:00 pm</time>
+        <div>
+          <h3>Wind-down</h3>
+          <p>Guided breathing and low light to prepare for restful sleep.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 5 STAY OPTIONS -->
+  <section class="th-stay" id="stay">
+    <div class="stay-head">
+      <div>
+        <p class="stay-tag" data-aos="fade-up">Program format</p>
+        <h2 data-aos="fade-up">Choose how you stay</h2>
+        <p class="stay-sub" data-aos="fade-up" data-aos-delay="100">The same team and therapies either way. Pick the
+          format that fits your life right now.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" class="seg" role="group" aria-label="Program format">
+        <button id="bRes" aria-pressed="true"><i class="fa-solid fa-bed" aria-hidden="true"></i> Residential
+          stay</button>
+        <button id="bDay" aria-pressed="false"><i class="fa-regular fa-sun" aria-hidden="true"></i> Day program</button>
+      </div>
+    </div>
+    <div class="stay-pane" id="paneRes">
+      <div class="stay-copy">
+        <h3>Live on campus, fully supported.</h3>
+        <p>Step away from daily pressure. You have a private room, round-the-clock care and a full schedule of therapy.
+        </p><a href="contact.html" class="btn stay-btn">Talk to an advisor <i class="fa-solid fa-arrow-right"
+            aria-hidden="true"></i></a>
+      </div>
+      <ul class="stay-list">
+        <li><span class="stay-ico"><i class="fa-solid fa-bed" aria-hidden="true"></i></span><span>Private rooms with
+            garden views</span></li>
+        <li><span class="stay-ico"><i class="fa-solid fa-user-nurse" aria-hidden="true"></i></span><span>Nurses and
+            doctors on site at all hours</span></li>
+        <li><span class="stay-ico"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></span><span>Best
+            for detox and complex recovery</span></li>
+        <li><span class="stay-ico"><i class="fa-solid fa-people-roof" aria-hidden="true"></i></span><span>Family
+            sessions every weekend</span></li>
+      </ul>
+    </div>
+    <div class="stay-pane" id="paneDay" hidden>
+      <div class="stay-copy">
+        <h3>Heal while staying close to home.</h3>
+        <p>Attend therapy for the day and return to your family in the evening. Ideal when your recovery is steady and
+          your home is supportive.</p><a href="contact.html" class="btn stay-btn">Talk to an advisor <i
+            class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <ul class="stay-list">
+        <li><span class="stay-ico"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></span><span>Five days a
+            week, 9:00 to 4:00</span></li>
+        <li><span class="stay-ico"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span><span>Same team and
+            therapies as residential care</span></li>
+        <li><span class="stay-ico"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span><span>Best for
+            injury recovery and mind and mood care</span></li>
+        <li><span class="stay-ico"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><span>Evening check-in
+            calls with your therapist</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6 FAQ -->
+  <section class="faq" id="faq">
+    <div class="faq-head" data-aos="fade-up">
+      <p class="section-tag">Common questions</p>
+      <h2>Questions about therapy</h2>
+      <p class="faq-note">Can't find your answer? Ask an advisor directly. We are happy to talk, at any hour.</p>
+      <div class="faq-help">
+        <a href="404.html" class="faq-link"><i class="fa-solid fa-phone" aria-hidden="true"></i><span><small>Call
+              anytime</small><b>+91 9876543210</b></span></a>
+        <a href="404.html" class="faq-link"><i class="fa-solid fa-envelope"
+            aria-hidden="true"></i><span><small>Write to admissions</small><b>info@thestackly.com</b></span></a>
+      </div>
+    </div>
+    <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+      <details name="faq" open>
+        <summary>Can I combine therapies?</summary>
+        <p>Yes. Most people do. Your team builds one plan that blends therapies and adjusts it every week.</p>
+      </details>
+
+      <details name="faq">
+        <summary>Who leads my care?</summary>
+        <p>A doctor and a lead therapist oversee your plan, with specialists joining as you need them.</p>
+      </details>
+
+      <details name="faq">
+        <summary>How do you measure progress?</summary>
+        <p>We set goals with you at the start and review them weekly, so progress is clear to you and your family.</p>
+      </details>
+
+      <details name="faq">
+        <summary>Is treatment confidential?</summary>
+        <p>Always. Your information is shared only with your care team, or with family when you agree.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- 7 CTA -->
+  <section class="th-cta" id="talk">
+    <p class="section-tag section-tag--light" data-aos="fade-up">Talk to us</p>
+    <h2>Not sure which therapy fits?</h2>
+    <p data-aos="fade-up" data-aos-delay="100">Tell us what is happening and an advisor will help you choose, at no cost and with no pressure.</p>
+    <div class="th-cta-btns" data-aos="fade-up" data-aos-delay="200"><a href="contact.html" class="btn"><i class="fa-solid fa-phone" aria-hidden="true"></i> Talk to an advisor</a><a href="blog.html"
+        class="btn btn-light">Read our articles <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="sf">
+
+    <div class="sf-grid">
+      <div class="sf-brand" data-aos="fade-up">
+        <a href="therapies.html" class="sf-brandname" aria-label="Stackly home"><img src="assets/images/stackly-white.webp" alt="Stackly" width="343" height="100"></a>
+        <p>Medical, physical and emotional rehabilitation in a calm 12-acre setting, with a care team beside you every
+          step.</p>
+        <ul class="sf-social" aria-label="Social media">
+          <li><a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+          <li><a href="therapies.html"><i class="fa-solid fa-chevron-right"></i> Therapies</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Physical Therapy</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Addiction Recovery</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Mind and Mood</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Active Reconditioning</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Occupational Therapy</a></li>
+        </ul>
+      </div>
+      <div class="sf-contact" data-aos="fade-up" data-aos-delay="300">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="404.html"><i class="fa-solid fa-phone"></i> &nbsp;+91 9876543210</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-envelope"></i> &nbsp;info@thestackly.com</a></li>
+          <li><i class="fa-solid fa-map-marker-alt"></i> &nbsp;Salem, Tamil Nadu, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sf-bottom"><span>&copy; 2026 Stackly Rehabilitation Center</span>
+      <span><a href="404.html">Privacy</a> &nbsp; <a href="404.html">Terms</a> &nbsp; Helpline +91 9876543210</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/therapies.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+/* 404 page. Loads after style.css and reuses its tokens, fonts and buttons.
+   One fluid size scale (clamp), so no breakpoints are needed. */
+
+.nf-hero {
+  min-height: 100svh;
+  padding: clamp(3rem, 5vw, 8rem) var(--pad);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center
+}
+
+.nf-logo {
+  display: block;
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem)
+}
+
+.nf-logo img {
+  display: block;
+  width: auto;
+  height: clamp(2.2rem, 5vw, 2rem);
+  background: none;
+  object-fit: contain
+}
+
+/* 404 as plain lining figures */
+.nf-code {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: .04em;
+  margin: 0 0 clamp(1.5rem, 4vw, 2.5rem);
+  font: 600 clamp(6rem, 24vw, 15rem)/.8 var(--serif);
+  letter-spacing: -.04em;
+  font-variant-numeric: lining-nums;
+  color: var(--deep)
+}
+
+.nf-code span { display: block; padding-top: .06em }
+
+.nf-hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  text-wrap: balance
+}
+
+.nf-sub {
+  max-width: 30rem;
+  margin: 1.25rem 0 2rem;
+  font-size: clamp(1rem, 2.4vw, 1.15rem);
+  text-wrap: balance
+}
+
+.nf-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem
+}
+
+@media (max-width: 400px) {
+  .nf-cta { width: 100%; flex-direction: column }
+  .nf-cta .btn { width: 100%; text-align: center }
+}
+
+/* Single entrance: the arch opens, then the text settles in */
+@media (prefers-reduced-motion: no-preference) {
+  .nf-code span { animation: nf-drop .9s cubic-bezier(.2, .7, .2, 1) both }
+  .nf-code span:nth-child(2) { animation-delay: .12s }
+  .nf-code span:nth-child(3) { animation-delay: .24s }
+  .nf-hero h1, .nf-sub, .nf-cta { animation: nf-rise .8s cubic-bezier(.2, .7, .2, 1) both }
+  .nf-hero h1 { animation-delay: .4s }
+  .nf-sub { animation-delay: .5s }
+  .nf-cta { animation-delay: .6s }
+}
+
+@keyframes nf-drop { from { opacity: 0; transform: translateY(-1.5rem) } to { opacity: 1; transform: none } }
+@keyframes nf-rise { from { opacity: 0; transform: translateY(1rem) } to { opacity: 1; transform: none } }

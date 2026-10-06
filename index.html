@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stackly Rehabilitation Center</title>
+  <meta name="description" content="Physical, mental and addiction rehabilitation in a calm, supportive setting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Hanken+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+  <div class="pl" id="pl" role="status" aria-label="Loading">
+    <img class="pl-logo" src="assets/images/stackly-white.webp" alt="Stackly" aria-hidden="true">
+    <span class="pl-bar" aria-hidden="true"><i></i></span>
+  </div>
+  <script src="assets/js/preloader.js"></script>
+
+  <header class="nav">
+    <a href="index.html" class="logo" aria-label="Stackly home"><img src="assets/images/stackly-white.webp" alt="Stackly" width="343" height="100"></a>
+    <nav id="menu" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="therapies.html">Therapies</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="nav-book"><i class="fa-regular fa-user" aria-hidden="true"></i> Login</a>
+    </nav>
+    <div class="nav-right">
+      <a href="login.html" class="nav-login"><i class="fa-regular fa-user" aria-hidden="true"></i> Login</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"
+        aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- 1 HERO -->
+  <section class="hero" id="top">
+    <!-- Decorative background blobs -->
+    <div class="hero-blob hero-blob--1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--2" aria-hidden="true"></div>
+
+    <!-- Left: text content -->
+    <div class="hero-text">
+      <div class="hero-tag" data-aos="fade-down" data-aos-duration="600">
+        <span class="hero-tag-dot" aria-hidden="true"></span>
+        Trusted since 2008 &nbsp;&middot;&nbsp; Salem, Tamil Nadu
+      </div>
+      <h1>
+        <span class="line"><span>Recovery</span></span>
+        <span class="line"><span>has a place</span></span>
+        <span class="line hero-accent-line"><span>to begin.</span></span>
+      </h1>
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="300">Medical, physical and emotional rehabilitation in a quiet 12-acre setting — with a dedicated care team beside you every step of the way.</p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="450">
+        <a href="#contact" class="btn hero-btn-primary">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i> Talk to an advisor
+        </a>
+        <a href="#programs" class="btn btn-ghost hero-btn-ghost">
+          See programs <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Inline trust micro-stats -->
+      <div class="hero-trust" data-aos="fade-up" data-aos-delay="600">
+        <div class="hero-trust-item">
+          <strong>4,200+</strong>
+          <span>lives supported</span>
+        </div>
+        <div class="hero-trust-divider" aria-hidden="true"></div>
+        <div class="hero-trust-item">
+          <strong>92%</strong>
+          <span>program completion</span>
+        </div>
+        <div class="hero-trust-divider" aria-hidden="true"></div>
+        <div class="hero-trust-item">
+          <strong>1:4</strong>
+          <span>staff-to-resident ratio</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: big image with overlapping small image -->
+    <div class="hero-visual" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+      <div class="hero-img-wrap">
+
+        <!-- BIG primary image (fills full column) -->
+        <div class="hero-img">
+          <img
+            src="assets/images/contact-image.webp"
+            alt="Care session at Stackly rehabilitation centre" fetchpriority="high">
+        </div>
+
+        <!-- SMALL overlapping image (bottom-left corner) -->
+        <div class="hero-img-2">
+          <img
+            src="assets/images/healing.webp"
+            alt="Peaceful garden grounds at the Stackly rehabilitation centre"
+            loading="eager">
+        </div>
+
+        <!-- 24/7 badge — right side of big image -->
+        <div class="hero-badge" aria-label="24/7 clinical support available">
+          <span class="hero-badge-num">24/7</span>
+          <small>clinical support</small>
+        </div>
+
+        <!-- JCI card — top-right -->
+        <div class="hero-card">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          <span>JCI Accredited<small>since 2014</small></span>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  
+  </section>
+
+  <!-- 2 PHILOSOPHY -->
+  <section class="philo" id="philosophy">
+    <p class="section-tag section-tag--light" data-aos="fade-up">Our philosophy</p>
+    <h2 class="philo-lead reveal-words">We treat <em>the person</em>, not the diagnosis.</h2>
+    <p class="philo-body reveal-words">Healing is slow, personal and never a straight line, so our work is to make the
+      next step feel possible.</p>
+    <div class="philo-cta" data-aos="fade-up"><a href="about.html" class="btn">Learn about our approach <i class="fa-solid fa-arrow-right"></i> </a></div>
+  </section>
+
+  <!-- 3 PROGRAMS -->
+  <section class="programs" id="programs">
+    <p class="section-tag" data-aos="fade-up">Our programs</p>
+    <h2 data-aos="fade-up">Programs built around you</h2>
+    <ul class="plist" data-aos="fade-up">
+      <li><a href="404.html">
+          <h3>Physical therapy</h3>
+          <p>Strength, mobility and pain management after injury or surgery.</p><img loading="lazy"
+            src="assets/images/therapy-studios.webp"
+            alt="Physiotherapist guiding a patient">
+        </a></li>
+      <li><a href="404.html">
+          <h3>Addiction recovery</h3>
+          <p>Medically supervised detox followed by structured, long-term support.</p><img loading="lazy"
+            src="assets/images/recovery.webp"
+            alt="Doctor consulting with a patient">
+        </a></li>
+      <li><a href="404.html">
+          <h3>Mind and mood</h3>
+          <p>Therapy, mindfulness and meditation for anxiety, trauma and burnout.</p><img loading="lazy"
+            src="assets/images/activity.webp"
+            alt="Person meditating at sunrise">
+        </a></li>
+      <li><a href="404.html">
+          <h3>Active reconditioning</h3>
+          <p>Group fitness and functional training to rebuild confidence in your body.</p><img loading="lazy"
+            src="assets/images/psyical-therapy.webp"
+            alt="Guided strength training session">
+        </a></li>
+    </ul>
+  </section>
+
+  <!-- 4 JOURNEY -->
+  <section class="journey" id="journey">
+    <div class="j-head" data-aos="fade-up">
+      <p class="section-tag">Your journey</p>
+      <h2>Your first 90 days</h2>
+      <p>A clear path, so you always know what comes next.</p>
+    </div>
+    <ol class="j-steps">
+      <li><span class="j-dot"></span>
+        <h3>Assessment</h3>
+        <p>A full medical and personal review in the first 48 hours. We listen before we plan.</p>
+      </li>
+      <li><span class="j-dot"></span>
+        <h3>Stabilise</h3>
+        <p>Weeks one to three focus on safety, rest and a daily rhythm you can hold.</p>
+      </li>
+      <li><span class="j-dot"></span>
+        <h3>Rebuild</h3>
+        <p>Therapy, training and skills work with weekly goals you set with your team.</p>
+      </li>
+      <li><span class="j-dot"></span>
+        <h3>Return</h3>
+        <p>A written aftercare plan, family sessions and check-ins for a full year.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 5 STATS -->
+  <section class="stats">
+    <div class="marquee" data-aos="fade">
+      <div class="track">
+        <span>Compassion</span>
+        <span>Evidence</span>
+        <span>Dignity</span>
+        <span>Community</span>
+        <span>Compassion</span>
+        <span>Evidence</span>
+        <span>Dignity</span>
+        <span>Community</span>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div data-aos="fade-up"><b data-count="18">0</b><small>years of care</small></div>
+      <div data-aos="fade-up" data-aos-delay="100"><b data-count="4200">0</b><small>lives supported</small></div>
+      <div data-aos="fade-up" data-aos-delay="200"><b data-count="92" data-suffix="%">0</b><small>finish their program</small></div>
+      <div data-aos="fade-up" data-aos-delay="300"><b data-count="1" data-suffix=":4">0</b><small>staff to resident ratio</small></div>
+    </div>
+  </section>
+
+  <!-- 6 FACILITY -->
+  <section class="facility" id="facility">
+    <div class="f-copy" data-aos="fade-right">
+      <p class="section-tag">Our facility</p>
+      <h2>Designed to feel like exhale</h2>
+      <p>Natural light, quiet gardens, a hydrotherapy pool and private rooms. Every space is chosen to lower stress so
+        the body can heal.</p>
+    </div>
+    <img class="f1" data-speed="0.9" loading="lazy"
+      src="assets/images/reception.webp"
+      alt="Bright modern clinical facility corridor">
+    <img class="f2" data-speed="1.25" loading="lazy"
+      src="assets/images/therapy-studios.webp"
+      alt="Group exercise class in a studio">
+    <img class="f3" data-speed="1.1" loading="lazy"
+      src="assets/images/rooms-treatment.webp"
+      alt="Sunrise over a quiet hillside">
+  </section>
+
+  <!-- 7 TEAM -->
+  <section class="team" id="team">
+    <p class="section-tag section-tag--light" data-aos="fade-up">Our team</p>
+    <h2 data-aos="fade-up">The people beside you</h2>
+    <div class="t-row">
+      <figure data-aos="fade-up"><img loading="lazy"
+          src="assets/images/doctor-1.webp"
+          alt="Dr. Meera Iyer">
+        <figcaption>Dr. Meera Iyer<small>Medical director</small></figcaption>
+      </figure>
+      <figure data-aos="fade-up" data-aos-delay="120"><img loading="lazy"
+          src="assets/images/doctor-2.webp"
+          alt="Dr. Arjun Rao">
+        <figcaption>Dr. Arjun Rao<small>Lead psychiatrist</small></figcaption>
+      </figure>
+      <figure data-aos="fade-up" data-aos-delay="240"><img loading="lazy"
+          src="assets/images/doctor-3.webp"
+          alt="Nisha Menon">
+        <figcaption>Nisha Menon<small>Head of therapy</small></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8 STORIES -->
+  <section class="stories" id="stories">
+    <div class="st-wrap">
+      <div class="st-side">
+        <p class="section-tag" data-aos="fade-up">Patient stories</p>
+        <h2 data-aos="fade-up">In their own words</h2>
+        <p data-aos="fade-up" data-aos-delay="100">A few of the people who walked the road home with us, and what it meant to them.</p>
+      </div>
+      <div class="st-stack" id="stack" data-aos="fade-up" data-aos-delay="200">
+        <figure class="story" data-pos="0">
+          <blockquote><p>I came in unable to walk unaided. Eight weeks later I climbed the garden steps on my own.</p></blockquote>
+          <figcaption><span class="st-av" aria-hidden="true"><img src="assets/images/Daniel.webp" alt="Daniel"></span><span><b>Daniel</b><small>Hip replacement recovery</small></span></figcaption>
+        </figure>
+        <figure class="story" data-pos="1" inert aria-hidden="true">
+          <blockquote><p>Nobody lectured me. They helped me build a day I actually wanted to wake up to.</p></blockquote>
+          <figcaption><span class="st-av" aria-hidden="true"><img src="assets/images/maria.webp" alt="Maria"></span><span><b>Maria</b><small>Addiction recovery</small></span></figcaption>
+        </figure>
+        <figure class="story" data-pos="2" inert aria-hidden="true">
+          <blockquote><p>The family sessions gave us a language we never had. We are talking again.</p></blockquote>
+          <figcaption><span class="st-av" aria-hidden="true"><img src="assets/images/james.webp" alt="James"></span><span><b>James</b><small>Father of a resident</small></span></figcaption>
+        </figure>
+      </div>
+      <div class="st-ctrl">
+        <div class="st-btns"><button id="prev" aria-label="Previous story"><i class="fas fa-chevron-left"></i></button><button id="next"
+            aria-label="Next story"><i class="fas fa-chevron-right"></i></button></div>
+        <div class="st-bars" aria-hidden="true"><span class="on"><i></i></span><span><i></i></span><span><i></i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 FAQ -->
+  <section class="faq" id="faq">
+    <div class="faq-head" data-aos="fade-up">
+      <p class="section-tag">Common questions</p>
+      <h2>Questions families ask</h2>
+      <p class="faq-note">Can't find your answer? Ask an advisor directly. We are happy to talk, at any hour.</p>
+      <div class="faq-help">
+        <a href="404.html" class="faq-link"><i class="fa-solid fa-phone" aria-hidden="true"></i><span><small>Call anytime</small><b>+91 9876543210</b></span></a>
+        <a href="404.html" class="faq-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span><small>Write to admissions</small><b>info@thestackly.com</b></span></a>
+      </div>
+    </div>
+    <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+      <details open>
+        <summary>How long is a typical stay?</summary>
+        <div class="faq-a"><p>Most programs run 30 to 90 days. Your team reviews the plan every week and adjusts it with you.</p></div>
+      </details>
+      <details>
+        <summary>Does insurance cover treatment?</summary>
+        <div class="faq-a"><p>We work with most major insurers and verify your cover before admission, free of charge.</p></div>
+      </details>
+      <details>
+        <summary>Can family visit?</summary>
+        <div class="faq-a"><p>Yes. Visiting hours run on weekends, and family therapy sessions are part of every program.</p></div>
+      </details>
+      <details>
+        <summary>What should I bring?</summary>
+        <div class="faq-a"><p>Comfortable clothing, prescribed medication and ID. We provide the rest.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 10 CONTACT + FOOTER -->
+  <section class="contact" id="contact">
+    <p class="section-tag section-tag--light" data-aos="fade-up">Get in touch</p>
+    <h2>Ready when you are.</h2>
+    <p data-aos="fade-up" data-aos-delay="100">Leave your number and an advisor will call within one working day. Every enquiry stays confidential.</p>
+    <form class="c-form" id="contactForm" novalidate data-aos="fade-up" data-aos-delay="200">
+      <div class="c-field">
+        <input type="tel" id="contactPhone" placeholder="Your phone number" aria-label="Phone number" aria-describedby="contactErr" autocomplete="tel" inputmode="numeric" maxlength="10">
+        <p class="c-err" id="contactErr" role="alert" aria-live="polite" hidden>Please enter a valid phone number.</p>
+      </div>
+      <button class="btn" type="submit"><i class="fa-solid fa-phone"></i> Request a call </button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="sf">
+
+    <div class="sf-grid">
+      <div class="sf-brand" data-aos="fade-up">
+        <a href="index.html" class="sf-brandname" aria-label="Stackly home"><img src="assets/images/stackly-white.webp" alt="Stackly" width="343" height="100"></a>
+        <p>Medical, physical and emotional rehabilitation in a calm 12-acre setting, with a care team beside you every
+          step.</p>
+        <ul class="sf-social" aria-label="Social media">
+          <li><a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="404.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+          <li><a href="therapies.html"><i class="fa-solid fa-chevron-right"></i> Therapies</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Physical Therapy</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Addiction Recovery</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Mind and Mood</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Active Reconditioning</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-chevron-right"></i> Occupational Therapy</a></li>
+        </ul>
+      </div>
+      <div class="sf-contact" data-aos="fade-up" data-aos-delay="300">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="404.html"><i class="fa-solid fa-phone"></i> &nbsp;+91 9876543210</a></li>
+          <li><a href="404.html"><i class="fa-solid fa-envelope"></i> &nbsp;info@thestackly.com</a></li>
+          <li><i class="fa-solid fa-map-marker-alt"></i> &nbsp;Salem, Tamil Nadu, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sf-bottom"><span>&copy; 2026 Stackly Rehabilitation Center</span>
+      <span><a href="404.html">Privacy</a> &nbsp; <a href="404.html">Terms</a> &nbsp; Helpline +91 9876543210</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

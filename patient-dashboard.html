@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patient dashboard | Stackly Rehabilitation Center</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body class="dash" data-role="patient">
+
+<!-- SIDEBAR -->
+<aside class="sb" id="sb">
+  <button class="sb-x" id="sbClose" type="button" aria-label="Close menu">&times;</button>
+  <a class="logo" href="patient-dashboard.html" aria-label="Stackly home"><img src="assets/images/stackly-white.webp" alt="Stackly" width="343" height="100"></a>
+  <p class="sb-role">Patient Dashboard</p>
+  <div class="sb-user">
+    <span class="av" id="sb-av">G</span>
+    <span id="sb-email">Guest</span>
+  </div>
+  <nav class="sb-nav" id="sbNav" aria-label="Dashboard">
+    <a href="#overview" data-id="overview" aria-current="page">Overview</a>
+    <a href="#appointments" data-id="appointments">Appointments</a>
+    <a href="#treatment" data-id="treatment">Treatment plan</a>
+    <a href="#support" data-id="support">Support</a>
+  </nav>
+  <div class="sb-foot">
+    <a class="sb-btn" href="index.html">Back to Home</a>
+    <a class="sb-btn out" href="login.html">Logout</a>
+  </div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<div class="dm">
+  <!-- TOP HEADER WITH LOGGED IN EMAIL -->
+  <header class="dh">
+    <button class="mb" id="burger" type="button" aria-label="Open menu"><span></span><span></span></button>
+    <div class="dh-title"><small>Patient Dashboard</small><h1 id="pageTitle">Overview</h1></div>
+    <div class="dh-actions">
+      <a href="404.html" class="dh-bell" aria-label="Notifications">
+        <i class="fa-regular fa-bell"></i>
+        <span class="dh-bell-dot" aria-hidden="true"></span>
+      </a>
+      <div class="dh-user"><span class="av" id="av">G</span><span id="email">Guest, not signed in</span></div>
+    </div>
+  </header>
+
+  <main class="dv" id="views">
+    <div class="view" id="overview" data-title="Overview">
+      <p class="dv-sub">Your recovery at a glance.</p>
+      <div class="ds">
+        <div class="ds-head"><h2>This week</h2></div>
+        <div class="stat">
+          <div class="card stat"><b data-n="6" data-s="">6</b><small>Sessions completed</small></div>
+          <div class="card stat"><b data-n="34" data-s="">34</b><small>Days in program</small></div>
+          <div class="card stat"><b data-n="72" data-s="%">72%</b><small>Goal progress</small></div>
+          <div class="card stat"><b>Thu</b><small>Next session</small></div>
+        </div>
+      </div>
+      <div class="ds">
+        <div class="ds-head"><h2>Today's schedule</h2><a class="btn btn-sm btn-ghost" href="404.html">Full calendar</a></div>
+        <div class="card rows">
+          <div class="row"><span class="lead">09:00</span><div class="body"><b>Hydrotherapy</b><small>Pool, level 1</small></div><a class="btn btn-sm btn-ghost" href="404.html">Details</a></div>
+          <div class="row"><span class="lead">11:30</span><div class="body"><b>Physiotherapy</b><small>Room 4 with Nisha Menon</small></div><a class="btn btn-sm btn-ghost" href="404.html">Details</a></div>
+          <div class="row"><span class="lead">16:00</span><div class="body"><b>Mindfulness group</b><small>Garden studio</small></div><a class="btn btn-sm btn-ghost" href="404.html">Join</a></div>
+        </div>
+      </div>
+      <div class="ds">
+        <div class="ds-head"><h2>Your care team</h2></div>
+        <div class="cards">
+          <div class="card"><h3>Dr. Meera Iyer</h3><p>Medical director. Reviews your plan every week.</p><a class="btn btn-sm" href="404.html">Message</a></div>
+          <div class="card"><h3>Dr. Arjun Rao</h3><p>Lead psychiatrist. Next check-in on Friday.</p><a class="btn btn-sm" href="404.html">Message</a></div>
+          <div class="card"><h3>Nisha Menon</h3><p>Head of therapy. Sets your weekly goals.</p><a class="btn btn-sm" href="404.html">Message</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view" id="appointments" data-title="Appointments" hidden>
+      <p class="dv-sub">See what is coming up and what you have done.</p>
+      <div class="ds">
+        <div class="ds-head"><h2>Upcoming sessions</h2><a class="btn btn-sm btn-ghost" href="404.html">Book a session</a></div>
+        <div class="card rows">
+          <div class="row"><span class="lead">Thu 10:30</span><div class="body"><b>Strength training</b><small>Gym floor, with Nisha Menon</small></div><a class="btn btn-sm btn-ghost" href="404.html">Reschedule</a></div>
+          <div class="row"><span class="lead">Fri 14:00</span><div class="body"><b>Psychiatry review</b><small>With Dr. Arjun Rao</small></div><a class="btn btn-sm btn-ghost" href="404.html">Reschedule</a></div>
+          <div class="row"><span class="lead">Sat 11:00</span><div class="body"><b>Family session</b><small>Counselling room 2</small></div><a class="btn btn-sm btn-ghost" href="404.html">Reschedule</a></div>
+        </div>
+      </div>
+      <div class="ds">
+        <div class="ds-head"><h2>Ways to meet</h2></div>
+        <div class="cards">
+          <div class="card"><h3>Video check-in</h3><p>A 20 minute call with your therapist from your room.</p><a class="btn btn-sm" href="404.html">Request</a></div>
+          <div class="card"><h3>Family visit</h3><p>Weekend visiting hours, booked a day ahead.</p><a class="btn btn-sm" href="404.html">Book</a></div>
+          <div class="card"><h3>Doctor review</h3><p>A weekly medical review of your progress.</p><a class="btn btn-sm" href="404.html">Schedule</a></div>
+        </div>
+      </div>
+      <div class="ds">
+        <div class="ds-head"><h2>Past sessions</h2></div>
+        <div class="card rows">
+          <div class="row"><span class="lead">Mon</span><div class="body"><b>Hydrotherapy</b><small>45 minutes, completed</small></div><a class="btn btn-sm btn-ghost" href="404.html">Summary</a></div>
+          <div class="row"><span class="lead">Sat</span><div class="body"><b>Group therapy</b><small>60 minutes, completed</small></div><a class="btn btn-sm btn-ghost" href="404.html">Summary</a></div>
+          <div class="row"><span class="lead">Fri</span><div class="body"><b>Physiotherapy</b><small>50 minutes, completed</small></div><a class="btn btn-sm btn-ghost" href="404.html">Summary</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view" id="treatment" data-title="Treatment plan" hidden>
+      <p class="dv-sub">Your program, goals and notes from your team.</p>
+      <div class="ds">
+        <div class="ds-head"><h2>Program progress</h2><a class="btn btn-sm btn-ghost" href="404.html">Download plan</a></div>
+        <div class="card bars">
+          <div class="bar"><div><span>Strength</span><b>72%</b></div><i><u style="width:72%"></u></i></div>
+          <div class="bar"><div><span>Mobility</span><b>58%</b></div><i><u style="width:58%"></u></i></div>
+          <div class="bar"><div><span>Sleep routine</span><b>85%</b></div><i><u style="width:85%"></u></i></div>
+          <div class="bar"><div><span>Mood check-ins</span><b>64%</b></div><i><u style="width:64%"></u></i></div>
+        </div>
+      </div>
+      <div class="ds">
+        <div class="ds-head"><h2>Goals this week</h2></div>
+        <div class="card rows">
+          <div class="row"><span class="lead">Daily</span><div class="body"><b>Morning stretch routine</b><small>10 minutes before breakfast</small></div><a class="btn btn-sm btn-ghost" href="404.html">Log</a></div>
+          <div class="row"><span class="lead">Wed</span><div class="body"><b>Balance exercises</b><small>Three sets with your therapist</small></div><a class="btn btn-sm btn-ghost" href="404.html">Log</a></div>
+          <div class="row"><span class="lead">Fri</span><div class="body"><b>Journal entry</b><small>Write three lines about your week</small></div><a class="btn btn-sm btn-ghost" href="404.html">Log</a></div>
+        </div>
+      </div>
+      <div class="ds">
+        <div class="ds-head"><h2>Notes from your team</h2></div>
+        <div class="cards">
+          <div class="card"><h3>Mobility</h3><p>Your range of motion is improving steadily. Keep the evening stretches going.</p></div>
+          <div class="card"><h3>Sleep</h3><p>Your routine is holding well. We will move lights-out by 30 minutes next week.</p></div>
+          <div class="card"><h3>Next review</h3><p>Your plan is reviewed with Dr. Iyer on Friday.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view" id="support" data-title="Support" hidden>
+      <p class="dv-sub">Guides, contacts and answers when you need them.</p>
+      <div class="ds">
+        <div class="ds-head"><h2>Guides for you</h2></div>
+        <div class="cards">
+          <div class="card"><h3>Managing pain at home</h3><p>Simple steps to ease pain between sessions.</p><a class="btn btn-sm" href="404.html">Read</a></div>
+          <div class="card"><h3>Building a daily rhythm</h3><p>A routine you can hold after discharge.</p><a class="btn btn-sm" href="404.html">Read</a></div>
+          <div class="card"><h3>A guide for families</h3><p>How to support recovery at home.</p><a class="btn btn-sm" href="404.html">Read</a></div>
+        </div>
+      </div>
+      <div class="ds">
+        <div class="ds-head"><h2>Reach us any time</h2></div>
+        <div class="cards">
+          <div class="card"><h3>Helpline</h3><p>1800 000 000, answered day and night.</p><a class="btn btn-sm" href="404.html">Call</a></div>
+          <div class="card"><h3>Your advisor</h3><p>Questions about insurance or admission.</p><a class="btn btn-sm" href="404.html">Message</a></div>
+          <div class="card"><h3>Aftercare team</h3><p>Plan your first year of check-ins.</p><a class="btn btn-sm" href="404.html">Message</a></div>
+        </div>
+      </div>
+      <div class="ds">
+        <div class="ds-head"><h2>Good to know</h2></div>
+        <div class="cards">
+          <div class="card"><h3>Visiting hours</h3><p>Weekends, with family sessions in every program.</p></div>
+          <div class="card"><h3>Insurance</h3><p>We verify your cover before admission, free of charge.</p></div>
+          <div class="card"><h3>Aftercare</h3><p>Every resident leaves with a written plan and a year of check-ins.</p></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>
