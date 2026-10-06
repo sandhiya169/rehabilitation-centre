@@ -771,9 +771,7 @@ h2 {
         transform: translateX(-50%);
         align-items: center
     }
-    .hero-img-wrap {
-        /* reset: no grid needed */
-    }
+    
     .hero-img {
         height: min(52svh, 420px);
         border-radius: 2rem
@@ -1015,7 +1013,6 @@ h2 {
 
 /* journey */
 .journey {
-    overflow-x: clip; /* steps slide in from the right; don't let them widen the page */
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     gap: 4rem;
@@ -1935,17 +1932,4 @@ html.pl-on body {
     .au-top .logo img {
         height: 2.4rem
     }
-}
-
-/* ---- AOS: never let sideways reveals widen the page on phones/tablets ---- */
-html { overflow-x: clip; }
-@media (max-width: 900px) {
-  [data-aos="fade-left"][data-aos],
-  [data-aos="fade-right"][data-aos],
-  [data-aos="slide-left"][data-aos],
-  [data-aos="slide-right"][data-aos],
-  [data-aos="zoom-in-left"][data-aos],
-  [data-aos="zoom-in-right"][data-aos] {
-    transform: translate3d(0, 30px, 0);
-  }
 }
